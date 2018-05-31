@@ -1,1 +1,1 @@
-`src` 文件夹下保存了每一关的通关代码。
+`src` 文件夹下保存了 [warriorjs](https://github.com/olistic/warriorjs) 的通关代码。
