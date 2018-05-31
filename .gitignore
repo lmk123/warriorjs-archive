@@ -1,0 +1,4 @@
+.DS_Store
+/node_modules
+/warriorjs/artist-beginner/*
+!/warriorjs/artist-beginner/.gitkeep

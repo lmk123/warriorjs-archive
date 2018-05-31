@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "license": "MIT",
+  "dependencies": {
+    "@warriorjs/cli": "^0.4.2",
+    "ncp": "^2.0.0"
+  },
+  "scripts": {
+    "save": "node ./scripts/save.js",
+    "start": "yarn save && warriorjs --time 0"
+  }
+}
