@@ -7,7 +7,18 @@ const profileStr = fs.readFileSync(
 )
 const profile = JSON.parse(atob(profileStr))
 
-ncp('./warriorjs/artist-beginner', './src/Level ' + profile.levelNumber)
+const dest = './src/Level ' + profile.levelNumber
+
+ncp(
+  './warriorjs/artist-beginner',
+  dest,
+  {
+    filter: /\.gitkeep/
+  },
+  () => {
+    console.log(`Saved to '${dest}/'.`)
+  }
+)
 
 function atob(string) {
   return new Buffer(string, 'base64').toString()
